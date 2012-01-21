@@ -1,0 +1,20 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  host: localhost
+  database: imnews_dev
+  username: root
+  password: root
+  pool: 5
+  reconnect: true
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  host: localhost
+  database: imnews
+  username: imnews
+  password: il88tWLiiExAdG
+  pool: 5
+  reconnect: true
+

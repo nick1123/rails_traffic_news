@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>News.NicksTrafficTricks.com - <%= @title.gsub(/<[^>]*?>/, '') %></title>
+  <%= javascript_include_tag "jquery-1.5.1.min" %>
+  <%= javascript_include_tag "app" %>
+  <link href="/stylesheets/hn.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<table width="850" border="0" bgcolor="#f6f6ef" align="center" cellpadding="10" cellspacing="0">
+  <tr>
+    <td bgcolor="#036564">
+      <table width="100%">
+        <tr valign="middle">
+          <td align="left">
+            <span id="header">
+              <a href="/">News.NicksTrafficTricks.com</a>
+              &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+              <a href="/">What's Hot</a>
+              &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+              <a href="?new=1">What's New</a>
+            </span>
+          </td>
+          <td align="right"> 
+            <form name="form1" method="post" action="/">
+              <span id="header">Show</span>
+              <select name="count" onChange="document.form1.submit()">
+              <% Post::VALID_COUNTS.each do |count| %>
+                <% selected = "selected" if count == @count %>
+                <option value="<%= count %>" <%= selected %>><%= count %></option>
+              <% end %>
+              </select>
+            </form>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="#f6f6ef">
+      <h1><%= @title.html_safe %></h1>
+      <%= yield %>
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="#033649">
+      <a name="bottom"></a>
+      <table border="0" width="100%" cellpadding="7" cellspacing="0" align="center">
+        <tr valign="top">
+          <td>
+            <div id="footer">
+              <h3>Sponsors</h3>
+              <ul>
+                <li><a href="http://nickstraffictricks.com/5145_30-high-page-rank-backlinks-packet-review/">30 High Page Rank Backlinks Packet</a></li>
+                <li><a href="http://nickstraffictricks.com/4832_20-ways-to-make-100-per-day-online/">20 Ways To Make $100 Per Day</a></li>
+              </ul>
+              <h3>Free Stuff</h3>
+              <ul>
+                <li><a href="http://nickstraffictricks.com/3300_free-back-links-to-your-site-2/">Free Back Links To Your Site</a></li>
+                <li><a href="http://nickstraffictricks.com/2777_free-stumbles/">Free Stumbles For Your Site</a></li>
+                <li><a href="http://free--web-traffic.com/">Free 68 Page Traffic Guide</a></li>
+                <li><a href="http://nickstraffictricks.com/4770_the-anti-product-launch/#videos">177 Traffic Videos</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div id="footer">
+              <h3>Additional Resources</h3>
+              <ul>
+                <li><a href="http://nickstraffictricks.com/4692_how-to-email-nick/">Email Nick</a></li>
+                <li><a href="http://nickstraffictricks.com/4856_how-to-rank-1-in-google/">How To Rank #1 In Google</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+      </table>
+
+
+      <div id="footer">
+        &copy; 2011 Stewart Marketing.
+      </div>
+    </td>
+  </tr>
+
+</table>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-160783-50']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<ol>
+<% @posts.each do |post| %>
+  <li>
+    <% if post.ip_voted_already?(@ip_address) == false %>
+    <span id="vote_button_<%= post.id %>"><a class="jax" href="/posts/update_vote/<%= post.id %>"><img src="/images/uparrow.gif" border="0" /></a></span>
+    <% else %>
+      &nbsp;&nbsp;
+    <% end %>
+    <a href="<%= post.url %>" target="_blank"><%= post.title_for_web.html_safe %></a> <span id="domain">(<a href="/?pid=<%= post.id %>"><%= post.domain %></a>)</span>
+  <div id="info_line">
+    &nbsp;&nbsp;&nbsp;&nbsp;<span id="votes_<%= post.id %>"><%= post.votes %></span> Votes &nbsp;&nbsp;
+      <!-- <%= post.points %> Points -->
+    Submitted <%= distance_of_time_in_words(post.created_at, Time.now) %> ago</div></li>
+<% end %>
+</ol>
+

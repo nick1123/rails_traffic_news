@@ -1,0 +1,18 @@
+<h1>Listing feeds</h1>
+
+<table>
+  <tr>
+    <th>Url</th>
+    <th>Name</th>
+    <th>Category</th>
+  </tr>
+
+<% @feeds.each do |feed| %>
+  <tr>
+    <td><%= feed.url %></td>
+    <td><%= feed.name %></td>
+    <td><%= feed.category_id %></td>
+  </tr>
+<% end %>
+</table>
+

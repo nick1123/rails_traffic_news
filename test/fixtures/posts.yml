@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  url: MyString
+  title: MyString
+  p_url: MyString
+  p_title: MyString
+  status_id: 1
+  category_id: 1
+  p_ip: MyString
+  r_ip: MyString
+
+two:
+  url: MyString
+  title: MyString
+  p_url: MyString
+  p_title: MyString
+  status_id: 1
+  category_id: 1
+  p_ip: MyString
+  r_ip: MyString

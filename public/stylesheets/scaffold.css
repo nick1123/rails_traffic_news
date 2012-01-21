@@ -1,0 +1,48 @@
+body { background-color: #fff; color: #333; }
+
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   10px;
+  line-height: 10px;
+}
+
+li
+{
+  margin-top: 8px;
+font-size: 1.5em;
+line-height: 1.385em;
+
+}
+
+a:hover 
+{ 
+  color: #CC0000; 
+  background-color:#CCC; 
+}
+
+#info_line, #info_line a 
+{
+  color: #444;
+  font-size: 10px;
+}
+
+#notice {
+  color: green;
+}
+
+#sidebar li 
+{
+  display: block;
+  font-size: 1.0em;
+}
+
+h1
+{
+  font-size: 2.4em;
+}
+
+#sidebar h3
+{
+  font-size: 1.6em;
+}
+

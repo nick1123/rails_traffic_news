@@ -1,0 +1,2 @@
+0 * * * * cd /var/www/apps/news.nickstraffictricks.com && /usr/bin/rake load:recent_rss RAILS_ENV=production
+0 * * * * cd /var/www/apps/news.nickstraffictricks.com && /usr/bin/rake load:adjust_points RAILS_ENV=production

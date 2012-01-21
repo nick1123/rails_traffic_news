@@ -1,0 +1,112 @@
+body
+{
+  background-color: #FFF;
+  color: #666;
+}
+
+body 
+{
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   10pt;
+}
+
+#header, #header a
+{
+  font-size: 10pt;
+  font-weight: bold;
+  color: #FFF;
+}
+
+h1
+{
+  color: #000;
+  font-size: 14px;
+}
+
+#footer, #footer li, #footer li a
+{
+  color: #FFF;
+  font-size: 9pt;
+  line-height: 10pt;
+}
+
+#footer li a:hover, #header a:hover
+{
+  color: #000;
+  background-color: #f6f6ef;
+}
+
+#footer h3
+{
+  font-size: 11pt;
+  margin-top: -10px;
+}
+
+#footer ul
+{
+  margin-left: -18px;
+  margin-bottom: 38px;
+}
+
+a
+{
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover, #hot a:hover, #new a:hover
+{
+  background-color: #FFFF99;
+}
+
+ol
+{
+  margin-left: -4px;
+}
+
+li, li a
+{
+  font-size: 11pt;
+  margin-bottom: 10px;
+  line-height: 16px;
+
+}
+
+#info_line, #info_line a, #domain, #domain a
+{
+  font-size: 9pt;
+  color: #666;
+}
+
+#sidebar ul
+{
+  margin-bottom: 18px;
+  margin-left: -18px;
+}
+
+#category, #hot a, #new a
+{
+  font-size: 9pt;
+  margin-bottom: 0px;
+  line-height: 12pt;
+  color: #000;
+}
+
+#hot a
+{
+  background-color: #FBB;
+}
+
+#new a
+{
+  background-color: #ACF;
+}
+
+
+#sidebar h3
+{
+  margin-top: -2px;
+  margin-bottom: -5px;
+  font-size: 14px;
+}
+
